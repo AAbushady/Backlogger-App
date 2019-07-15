@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="vkJ-Db-b5u">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="urd-qQ-D2c">
                             <connections>
-                                <segue destination="72H-zp-Xhu" kind="show" id="LhI-rH-4VZ"/>
+                                <segue destination="72H-zp-Xhu" kind="show" identifier="mediaSegue" id="LhI-rH-4VZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -69,11 +69,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs9-v4-ffR">
-                                <rect key="frame" x="192" y="458" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs9-v4-ffR">
+                                <rect key="frame" x="192" y="458" width="29" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addTapped:" destination="72H-zp-Xhu" eventType="touchUpInside" id="dhr-kS-gcT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5V-bm-9ZA">
+                                <rect key="frame" x="184.66666666666666" y="508" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="72H-zp-Xhu" eventType="touchUpInside" id="NSe-5o-Rgy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,6 +91,8 @@
                             <constraint firstItem="Y4q-MT-KZb" firstAttribute="width" secondItem="Rkb-gh-RIb" secondAttribute="width" id="PfX-XO-Btf"/>
                             <constraint firstItem="Y4q-MT-KZb" firstAttribute="top" secondItem="Rkb-gh-RIb" secondAttribute="bottom" constant="20" id="aFb-z4-7TL"/>
                             <constraint firstItem="Hs9-v4-ffR" firstAttribute="centerX" secondItem="T9p-HE-fkU" secondAttribute="centerX" id="cGE-gE-ZB3"/>
+                            <constraint firstItem="h5V-bm-9ZA" firstAttribute="top" secondItem="Hs9-v4-ffR" secondAttribute="bottom" constant="20" id="eGf-8F-c8q"/>
+                            <constraint firstItem="h5V-bm-9ZA" firstAttribute="centerX" secondItem="T9p-HE-fkU" secondAttribute="centerX" id="jWQ-VU-R84"/>
                             <constraint firstItem="Hs9-v4-ffR" firstAttribute="top" secondItem="Y4q-MT-KZb" secondAttribute="bottom" constant="20" id="jvs-eA-CLB"/>
                             <constraint firstItem="Rkb-gh-RIb" firstAttribute="top" secondItem="S3r-Wk-T8P" secondAttribute="top" constant="50" id="mEB-Pa-sfz"/>
                         </constraints>
@@ -104,6 +113,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="Hs9-v4-ffR" id="YrY-9D-xk3"/>
+                        <outlet property="deleteButton" destination="h5V-bm-9ZA" id="Shg-Cd-nfW"/>
                         <outlet property="mediaImageView" destination="Rkb-gh-RIb" id="Dbr-2N-I6t"/>
                         <outlet property="titleTextField" destination="Y4q-MT-KZb" id="nz3-Oe-DW9"/>
                     </connections>
