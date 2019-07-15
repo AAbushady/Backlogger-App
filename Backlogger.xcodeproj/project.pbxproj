@@ -13,6 +13,8 @@
 		30F84C8B22DCA3F900203060 /* Backlogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30F84C8922DCA3F900203060 /* Backlogger.xcdatamodeld */; };
 		30F84C8D22DCA3FB00203060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F84C8C22DCA3FB00203060 /* Assets.xcassets */; };
 		30F84C9022DCA3FB00203060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F84C8E22DCA3FB00203060 /* LaunchScreen.storyboard */; };
+		30F84C9822DCCE4800203060 /* rz4Jrxs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30F84C9722DCCE4800203060 /* rz4Jrxs.jpg */; };
+		30F84C9A22DCCF6E00203060 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F84C9922DCCF6E00203060 /* MediaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		30F84C8C22DCA3FB00203060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F84C8F22DCA3FB00203060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30F84C9122DCA3FB00203060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F84C9722DCCE4800203060 /* rz4Jrxs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rz4Jrxs.jpg; sourceTree = "<group>"; };
+		30F84C9922DCCF6E00203060 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				30F84C8222DCA3F900203060 /* AppDelegate.swift */,
 				30F84C8422DCA3F900203060 /* ViewController.swift */,
+				30F84C9922DCCF6E00203060 /* MediaViewController.swift */,
 				30F84C8622DCA3F900203060 /* Main.storyboard */,
 				30F84C8C22DCA3FB00203060 /* Assets.xcassets */,
 				30F84C8E22DCA3FB00203060 /* LaunchScreen.storyboard */,
 				30F84C9122DCA3FB00203060 /* Info.plist */,
 				30F84C8922DCA3F900203060 /* Backlogger.xcdatamodeld */,
+				30F84C9722DCCE4800203060 /* rz4Jrxs.jpg */,
 			);
 			path = Backlogger;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F84C9022DCA3FB00203060 /* LaunchScreen.storyboard in Resources */,
+				30F84C9822DCCE4800203060 /* rz4Jrxs.jpg in Resources */,
 				30F84C8D22DCA3FB00203060 /* Assets.xcassets in Resources */,
 				30F84C8822DCA3F900203060 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +148,7 @@
 				30F84C8522DCA3F900203060 /* ViewController.swift in Sources */,
 				30F84C8322DCA3F900203060 /* AppDelegate.swift in Sources */,
 				30F84C8B22DCA3F900203060 /* Backlogger.xcdatamodeld in Sources */,
+				30F84C9A22DCCF6E00203060 /* MediaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
