@@ -61,5 +61,7 @@ class MediaViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         // Send completed Media entity to Core Data.
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
     }
 }
